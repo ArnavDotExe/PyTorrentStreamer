@@ -83,5 +83,5 @@ class Movie:
             cmd = cmd + '"{}"'.format(magnet_link)
             if not self.download:
                 print("Streaming....")
-                cmd+= ' ---vlc'
+                cmd+= ' --vlc'
             subprocess.call(cmd, shell=True)
